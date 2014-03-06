@@ -1,0 +1,67 @@
+
+
+/* Clearfix ----------- */
+.clearfix:after{ content:"";  display:block;  clear:both;  visibility:hidden;  line-height:0;  height:0}
+.clearfix{ display:inline-block}
+html[xmlns] .clearfix{ display:block}
+* html .clearfix{ height:1%}
+
+.center_wrap{ margin:0 auto; padding:0 0px; }
+
+
+/* featured service */
+.featured_service{width:100%; border-width:0px 0px 3px 0px; border-style:solid; border-color:#c2bfba; padding-top: 20px; padding-bottom:0px; padding-right: 10px; padding-left: 10px;   background: $lightGrayColor; border-radius: 20px;}
+.featured_service header img{float:left; margin:-2px 20px 0 0} 
+.featured_service header h3{margin:0 0 .7em 0; color:$darkGrayColor;}
+.featured_service p{clear:left}
+
+#main-content{float:left; width:100%; margin-top:-20px; margin-bottom: 20px;
+
+font-size: 100%;
+line-height: 1.5;
+color: $mediumGrayColor;
+font-size: .7em;
+
+}
+
+/* intro */
+.intro{padding:0; margin-bottom:1.5em; }
+.intro .intro_text{
+  color:$darkBlueColor;
+  text-align:center;
+}
+
+
+/*====================================
+COLUMNS
+=====================================*/
+.columns{width:100%; float:left; margin-bottom:0}
+.one_half{width:48%}
+.one_third{
+ @include respond-to(handhelds) {width:100%; padding-bottom: 20px;}
+ @include respond-to(medium-screens) { width:31.91%}
+@include respond-to(wide-screens) { width:31.91%  }
+}
+.two_third{width:65.33%}
+.one_fourth{width:23.40%}
+.three_fourth{width:74%}
+.one_fifth{width:16.8%}
+.one_sixth{width:13.33%}
+.two_fifth{width:37.6%}
+.three_fifth{width:58.4%}
+.four_fifth{width:67.2%}
+.five_sixth{width:82.67%}
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth{
+position:relative; margin-right:2%; float:left; margin-bottom:0;
+ @include respond-to(handhelds) { margin-right:0!important; clear:right}
+ @include respond-to(medium-screens) { }
+@include respond-to(wide-screens) {   }
+
+}
+.last{margin-right:0 !important; clear:right;}
+.clearboth{clear:both; display:block; font-size:0; height:0; line-height:0; width:100%}
+
+
+.clearboth{
+  clear:both;
+}
