@@ -1,7 +1,7 @@
 name: "Kelli Ireland - Pittsburgh, PA"
 markdown: redcarpet
 pygments: true
-
+permalink: /posts/:year/:month/:day/:title
 
 author :
   name : Kelli Ireland
